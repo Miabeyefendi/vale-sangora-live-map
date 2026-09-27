@@ -192,13 +192,25 @@ function Start-MapWindow {
     return $h
 }
 
+# While the map is on screen it has the keyboard, so the game (and the mod's Alt+CapsLock keybind)
+# never sees the key. Alt+CapsLock is therefore registered here only while the map is visible, and
+# released when it hides, so the mod keeps opening it from inside the game.
+$closeKeyId = 0xD4A2
+$script:closeKeyOn = $false
+function Set-CloseKey($on) {
+    if ($on -and -not $script:closeKeyOn) { $script:closeKeyOn = [Ov]::RegisterHotKey([IntPtr]::Zero, $closeKeyId, (0x1 -bor 0x4000), 0x14) }
+    elseif (-not $on -and $script:closeKeyOn) { [Ov]::UnregisterHotKey([IntPtr]::Zero, $closeKeyId) | Out-Null; $script:closeKeyOn = $false }
+}
+
 function Show-Map($h) {
     [Ov]::ShowWindow($h, 9) | Out-Null
     [Ov]::SetWindowPos($h, $HWND_TOPMOST, 0, 0, 0, 0, 0x3 -bor $SWP_SHOWWINDOW) | Out-Null
     [Ov]::Focus($h)
+    Set-CloseKey $true
 }
 
 function Hide-Map($h) {
+    Set-CloseKey $false
     [Ov]::ShowWindow($h, 0) | Out-Null
     $g = Find-GameWindow
     if ($g -ne [IntPtr]::Zero) { [Ov]::Focus($g) }
@@ -223,6 +235,7 @@ try {
         if (-not [Ov]::IsWindow($hwnd)) {
             if (-not $withGame) { break }
             $hwnd = [IntPtr]::Zero
+            Set-CloseKey $false
         }
         $action = ''
         if (Test-Path $signal) {
@@ -230,10 +243,8 @@ try {
             Remove-Item $signal -Force -ErrorAction SilentlyContinue
             if ($action -eq '') { $action = 'toggle' }
         }
-        if ($hotkeyOn) {
-            while ([Ov]::PeekMessage([ref]$msg, [IntPtr]::Zero, 0, 0, 1)) {
-                if ($msg.message -eq 0x0312) { $action = 'toggle' }
-            }
+        while ([Ov]::PeekMessage([ref]$msg, [IntPtr]::Zero, 0, 0, 1)) {
+            if ($msg.message -eq 0x0312) { $action = if ([int]$msg.wParam -eq $closeKeyId) { 'hide' } else { 'toggle' } }
         }
         if ($action -ne '') {
             if ($hwnd -eq [IntPtr]::Zero) { $hwnd = Start-MapWindow }
@@ -258,6 +269,7 @@ try {
     }
 } finally {
     if ($hotkeyOn) { [Ov]::UnregisterHotKey([IntPtr]::Zero, $hotkeyId) | Out-Null }
+    Set-CloseKey $false
     if ($ownServer -and -not $ownServer.HasExited) { Stop-Process -Id $ownServer.Id -Force }
     $mutex.ReleaseMutex() | Out-Null
 }
