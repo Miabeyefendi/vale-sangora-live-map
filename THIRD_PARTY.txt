@@ -1,0 +1,16 @@
+Third-party notices
+===================
+
+MapLibre GL JS 5.24.0 (src\core\maplibre-gl.js, maplibre-gl.css)
+  Copyright (c) 2023, MapLibre contributors. 3-Clause BSD License.
+  https://github.com/maplibre/maplibre-gl-js/blob/v5.24.0/LICENSE.txt
+
+Map data (downloaded by install.bat, not included in this package)
+  Tiles, markers, icons and descriptions: gamerguides.com, The Blood of Dawnwalker Vale Sangora map.
+  Content belongs to GamerGuides. It is downloaded to your own PC for personal use.
+
+Extra markers (src\assets\data\extra\mapgenie.json)
+  Marker positions and short descriptions imported from mapgenie.io, aligned to the map above.
+
+UE4SS (RE-UE4SS) is required and installed separately. https://github.com/UE4SS-RE/RE-UE4SS
+Node.js is required and installed separately. https://nodejs.org

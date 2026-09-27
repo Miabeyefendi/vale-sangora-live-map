@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vale Sangora</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/images/db-cat-icon/16/117516/dawnwalker_journal-0b9035ac.png.png">
+<link rel="stylesheet" href="maplibre-gl.css">
+<link rel="stylesheet" href="style.css?v=18">
+</head>
+<body>
+<aside id="side">
+  <div class="side-head">
+    <input id="search" type="search" data-i18n-ph="search" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+  <hr>
+  <section class="box">
+    <div class="row"><span class="lbl" data-i18n="markers"></span><span class="grow"></span><button id="hide-all" type="button" data-i18n="hide"></button><button id="show-all" type="button" data-i18n="show"></button></div>
+  </section>
+  <hr>
+  <section class="box">
+    <div class="row"><span class="lbl" data-i18n="view"></span><span class="grow"></span><div class="seg" id="done-mode"><button type="button" data-mode="faded" data-i18n="all"></button><i>|</i><button type="button" data-mode="only" data-i18n="finished"></button><i>|</i><button type="button" data-mode="hide" data-i18n="ongoing"></button></div></div>
+  </section>
+  <hr>
+  <section class="box">
+    <div class="row"><span class="lbl" data-i18n="auto"></span><span class="grow"></span><input id="auto-complete" type="checkbox" checked><span class="ico warn tip" id="auto-info" data-tip="">!</span></div>
+    <div class="row"><span class="small" data-i18n="readFirst"></span><span class="grow"></span><span class="ico info tip" data-i18n-tip="autoWarn">i</span></div>
+  </section>
+  <hr>
+  <section class="box">
+    <label class="chk tip" data-i18n-tip="tipChest"><input id="auto-chest" type="checkbox" checked><span data-i18n="optChest"></span></label>
+    <label class="chk tip" data-i18n-tip="tipQuest"><input id="auto-quest" type="checkbox" checked><span data-i18n="optQuest"></span></label>
+    <label class="chk tip" data-i18n-tip="tipPoi"><input id="auto-poi" type="checkbox" checked><span data-i18n="optPoi"></span></label>
+    <label class="chk tip" data-i18n-tip="tipLoot"><input id="auto-loot" type="checkbox"><span data-i18n="optLoot"></span></label>
+    <label class="chk tip" data-i18n-tip="tipItem"><input id="auto-item" type="checkbox"><span data-i18n="optItem"></span></label>
+  </section>
+  <hr>
+  <section class="box">
+    <div class="row"><span class="lbl" data-i18n="calib"></span><span class="grow"></span><button id="btn-cal-reset" type="button" data-i18n="recal" data-i18n-title="recalTip"></button><button id="btn-refresh-map" type="button" data-i18n="refreshMap" data-i18n-title="refreshTip"></button></div>
+    <div class="row"><span id="cal-info" class="small ellipsis"></span></div>
+    <div id="cal-hint" hidden><span data-i18n="calHint"></span> <button id="btn-here" type="button" data-i18n="here" data-i18n-title="hereTip"></button></div>
+  </section>
+  <hr>
+  <section class="box">
+    <div class="row"><span class="lbl" data-i18n="location"></span><span class="grow"></span><span id="pos-status" class="small"></span></div>
+  </section>
+  <hr>
+  <section class="box list">
+    <div id="pinned-box"><div class="row"><span class="lbl" data-i18n="follow"></span><span id="pinned-count" class="small"></span></div><ul id="pinned-list"></ul></div>
+    <div id="cats"></div>
+  </section>
+  <input id="follow-me" type="checkbox" hidden>
+</aside>
+<div id="map">
+  <div id="map-bar">
+    <button id="btn-lock" type="button" class="tool"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path id="lock-shackle" d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></button>
+    <button id="btn-reload" type="button" class="tool" data-i18n-title="reload"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg></button>
+    <div class="tool progress-box"><div class="bar"><div id="progress-fill"></div></div><span id="progress-text">0 / 0</span></div>
+    <button id="btn-lang" type="button" class="tool">EN</button>
+  </div>
+</div>
+<aside id="detail" hidden>
+  <div class="detail-head">
+    <button id="detail-close" type="button" data-i18n-title="close">&times;</button>
+    <div class="detail-cat" id="detail-cat"></div>
+    <h2 id="detail-title"></h2>
+    <div class="detail-actions">
+      <button id="btn-collected" type="button" data-i18n-title="doneTip"></button>
+      <button id="btn-pinned" type="button" data-i18n-title="pinTip"></button>
+      <button id="btn-goto" type="button" data-i18n="goto" data-i18n-title="gotoTip"></button>
+    </div>
+  </div>
+  <div class="detail-scroll">
+    <img id="detail-img" alt="" hidden>
+    <dl id="detail-meta"></dl>
+    <div id="detail-body"></div>
+    <div id="detail-items"></div>
+    <div id="detail-links"></div>
+  </div>
+  <div class="detail-foot">
+    <textarea id="detail-note" data-i18n-ph="note"></textarea>
+  </div>
+</aside>
+<script src="maplibre-gl.js"></script>
+<script src="i18n.js?v=4"></script>
+<script src="app.js?v=24"></script>
+<script src="calib-core.js?v=9"></script>
+<script src="auto.js?v=27"></script>
+</body>
+</html>
