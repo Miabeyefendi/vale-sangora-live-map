@@ -1,163 +1,184 @@
 # Vale Sangora Live Map
 
-Interactive map for **The Blood of Dawnwalker**. Press **Alt+CapsLock** in the game and the map appears over the game. It shows where you are and marks finished shrines, camps, quests and chests by itself.
+A map for **The Blood of Dawnwalker**.
 
-Everything here is plain text. Nothing is compiled. You can open every file with Notepad and read it.
+- Press **Alt+CapsLock** in the game. The map opens over the game.
+- The map shows where you are.
+- When you finish a shrine, a camp, a quest or a chest, the map marks it for you.
+
+You do not need to know anything about code. Just follow the steps, one by one.
 
 ---
 
-## Before you start (do this once)
+## Part 1. Download the map
 
-### A. Install Node.js
+1. Go to the **Releases** page: https://github.com/Miabeyefendi/vale-sangora-live-map/releases/latest
+2. Under **Assets**, click the file **ValeSangoraLiveMap-x.x.x.zip**. It downloads.
+3. Make a new folder. Example: `D:\DawnwalkerMap`
+4. Open the zip file. Select everything inside. Copy it.
+5. Paste it into your new folder `D:\DawnwalkerMap`.
+
+**Check:** open `D:\DawnwalkerMap`. You must see these:
+- `install.bat`
+- `start.bat`
+- a folder named `src`
+
+Do not move or delete this folder later. The map lives here.
+
+---
+
+## Part 2. Install Node.js
+
+The map needs a free program called Node.js.
 
 1. Go to https://nodejs.org
-2. Click the big green button that says **LTS**.
-3. Open the downloaded file and click **Next** until it finishes. Keep all the default options.
-4. Restart your PC.
+2. Click the green button with **LTS** on it. A file downloads.
+3. Open the file.
+4. Click **Next**, **Next**, **Next**... until **Finish**. Do not change anything.
+5. **Restart your PC.**
 
-### B. Install UE4SS in the game
+---
 
-If you already use other Dawnwalker mods, you probably have it. Check: open your game folder, then `Dawnwalker\Binaries\Win64`. If there is a folder named **ue4ss** there, skip this part.
+## Part 3. Install UE4SS
 
+UE4SS lets mods run inside the game.
+
+**Do you already have it?**
+1. Open your game folder.
+2. Open `Dawnwalker`, then `Binaries`, then `Win64`.
+3. Do you see a folder named `ue4ss`?
+   - **Yes:** skip Part 3. Go to Part 4.
+   - **No:** do the steps below.
+
+**Install it:**
 1. Go to https://github.com/UE4SS-RE/RE-UE4SS/releases
-2. Download the file whose name starts with **UE4SS_v3** and ends with **.zip** (not the one with "zDEV" in the name).
-3. Open the zip and copy **everything** inside it into `Dawnwalker\Binaries\Win64` in your game folder.
-
-### C. Set the game to Borderless
-
-In the game: **Settings > Display > Window Mode > Borderless**. The map cannot appear over "Fullscreen".
-
-### D. Find your game folder
-
-You will need its address. Examples:
-- Steam: `C:\Program Files (x86)\Steam\steamapps\common\The Blood of Dawnwalker`
-- Other: the folder that contains **Dawnwalker.exe** and a folder named **Dawnwalker**
-
-Tip: open the folder, click the address bar at the top, the full address appears. Copy it with Ctrl+C.
-
-### E. Download this map
-
-1. On this page, click the green **Code** button, then **Download ZIP**.
-2. Make a new folder, for example `D:\DawnwalkerMap`.
-3. Open the zip and copy everything inside `vale-sangora-live-map-main` into `D:\DawnwalkerMap`.
-   When you open `D:\DawnwalkerMap` you must see `install.bat`, `start.bat` and a folder named `src`.
-4. Do not move or delete this folder later. The map lives here.
+2. Find the newest version. Under **Assets**, download the file named like `UE4SS_v3.0.1.zip`.
+   Do **not** take the file that starts with `zDEV`.
+3. Open the zip. Copy everything inside.
+4. Paste it into your game folder, into `Dawnwalker\Binaries\Win64`.
 
 ---
 
-## Install: easy way
+## Part 4. Find your game folder
 
-1. Open `D:\DawnwalkerMap` and double-click **install.bat**.
-   If Windows shows "Windows protected your PC", click **More info**, then **Run anyway**.
-2. A black window asks for your game folder. Paste the address from step D (right-click pastes) and press Enter.
-3. Wait. It downloads the map pictures (about 300 MB). When it says **Done**, press any key.
+You need the address of your game folder in Part 5.
 
-Finished. Go to **How to use**.
+1. Open the folder where the game is installed.
+   It is the folder with **Dawnwalker.exe** in it.
+2. Click on the address bar at the top of the window.
+3. The full address appears. Example: `C:\Games\The Blood of Dawnwalker`
+4. Press **Ctrl+C** to copy it.
 
 ---
 
-## Install: manual way (no .bat files)
+## Part 5. Install the map
 
-Follow every step exactly.
+1. Open `D:\DawnwalkerMap`.
+2. Double-click **install.bat**.
+3. Windows may show a blue box: "Windows protected your PC".
+   Click **More info**, then click **Run anyway**.
+   (This is normal for .bat files. You can open install.bat with Notepad and read it.)
+4. A black window opens. It asks for your game folder.
+5. **Right-click** in the black window. Your address from Part 4 appears.
+6. Press **Enter**.
+7. Wait. It downloads the map pictures (about 300 MB). This can take a few minutes.
+8. When you see **Done**, press any key. The window closes.
 
-### Step 1: copy the mod into the game
+The install is finished.
 
-1. Open `D:\DawnwalkerMap\src\mod`. You see a folder named **DawnwalkerMapPos**.
-2. Copy that folder (right-click > Copy).
-3. Open your game folder, then `Dawnwalker\Binaries\Win64\ue4ss\Mods`.
-4. Paste it there (right-click > Paste).
+---
 
-You now have: `...\ue4ss\Mods\DawnwalkerMapPos\Scripts\main.lua`
+## Part 6. Set the game window
 
-### Step 2: create the settings file
+The map cannot show over a full screen game.
 
-1. Open `...\ue4ss\Mods\DawnwalkerMapPos\Scripts`
-2. Open **Notepad** (press the Windows key, type `notepad`, press Enter).
-3. Type these two lines. Change `D:\DawnwalkerMap\` to your own map folder from step E. Keep the `\` at the end.
+1. Start the game.
+2. Go to **Settings**, then **Display**.
+3. Set **Window Mode** to **Borderless**.
 
+You only do this once.
+
+---
+
+## Part 7. Play
+
+1. Start the game.
+2. Load your save.
+3. Wait 10 seconds.
+4. Press **Alt+CapsLock**. The map opens.
+5. Press **Alt+CapsLock** again. The map closes and you are back in the game.
+
+---
+
+## Part 8. Buttons on the map
+
+| Button | What it does |
+|---|---|
+| Lock (top left) | Keeps you in the middle of the map. Click it to move the map with the mouse. |
+| Refresh (top left) | Reads the game again now. |
+| EN / TR (top right) | Changes the language. |
+| All / Finished / Ongoing | Choose which markers you see. |
+| Left click on a marker | Shows information about it. You can write your own note. |
+| Right click on a marker | Marks it as done. Right click again to undo. |
+
+**Automatic marking:** the map marks things you finished in the game. Sometimes it marks the wrong marker near it. If that happens, right-click that marker. It will not come back.
+
+---
+
+## Part 9. Use the map without the game
+
+Double-click **start.bat**. The map opens in a window.
+
+To close everything, double-click **stop.bat**.
+
+---
+
+## Part 10. Keep your progress safe
+
+Your progress is in this file: `D:\DawnwalkerMap\src\assets\data\state.json`
+
+Copy this file to a safe place sometimes.
+
+---
+
+## Part 11. Problems
+
+**Alt+CapsLock does nothing.**
+Load a save first. Wait 10 seconds. It does not work in the main menu.
+
+**The map opens, but the game behind it is black.**
+Set Window Mode to Borderless (Part 6).
+
+**The black window says `'node' is not recognized`.**
+Node.js is not installed. Do Part 2 again and restart your PC.
+
+**The black window says "UE4SS is not installed".**
+Do Part 3 again.
+
+**The map is grey, no pictures.**
+The download did not finish. Double-click install.bat again. It continues where it stopped.
+
+**The map works, but my position is not shown.**
+Start the game and load a save. Your position appears only while you play.
+
+---
+
+## Part 12. Remove the map
+
+1. In your game folder, open `Dawnwalker\Binaries\Win64\ue4ss\Mods`.
+2. Delete the folder `DawnwalkerMapPos`.
+3. Delete your map folder `D:\DawnwalkerMap`.
+
+---
+
+## For advanced users: install without .bat files
+
+1. Copy `src\mod\DawnwalkerMapPos` into `<game>\Dawnwalker\Binaries\Win64\ue4ss\Mods\`
+2. In `...\Mods\DawnwalkerMapPos\Scripts\` create `config.ini` (in Notepad choose "Save as type: All files"):
    ```
    app_root=D:\DawnwalkerMap\
    autostart=0
    ```
-
-4. Click **File > Save As**.
-5. Go to the `Scripts` folder from point 1.
-6. At **Save as type**, choose **All files (\*.\*)**. This is important.
-7. At **File name**, type `config.ini` and click **Save**.
-
-Check: the `Scripts` folder now has `main.lua` and `config.ini`. If you see `config.ini.txt`, delete it and do step 2 again, choosing **All files**.
-
-### Step 3: download the map pictures (only once)
-
-1. Open `D:\DawnwalkerMap`.
-2. Click the address bar at the top, delete what is there, type `cmd` and press Enter. A black window opens.
-3. Type this and press Enter:
-
-   ```
-   node src\services\fetch.js
-   ```
-
-4. Wait until it stops writing and shows the blinking cursor again (a few minutes, about 300 MB). Close the window.
-
-If it says `'node' is not recognized`, Node.js is not installed. Do part A again and restart your PC.
-
----
-
-## How to use
-
-### Easy way
-
-1. Start the game and load your save.
-2. Wait about 10 seconds.
-3. Press **Alt+CapsLock**. The map appears. Press **Alt+CapsLock** again to hide it and go back to the game.
-
-### Manual way
-
-The manual way does not start anything by itself. Every time you play:
-
-1. Open `D:\DawnwalkerMap`, click the address bar, type `cmd`, press Enter.
-2. Type this and press Enter:
-
-   ```
-   node src\main.js
-   ```
-
-3. The map opens in its own window. Keep the black window open while you play; closing it closes the map.
-4. Start the game and load your save. Your position appears on the map.
-
-To show and hide the map over the game with **Alt+CapsLock** instead, type this in point 2:
-
-```
-powershell -ExecutionPolicy Bypass -File src\overlay.ps1
-```
-
----
-
-## On the map
-
-- **Left click** a marker: details and your own note.
-- **Right click** a marker: mark as done / not done.
-- **Lock** button (top left): keeps you in the centre. Click to move the map freely.
-- **Refresh** button: reads the game again right now.
-- **EN / TR** button (top right): language.
-- **Show: All | Finished | Ongoing**: which markers you see.
-- **Automatic marking**: hover the (i) icon and read it once. If something gets marked by mistake, right-click it.
-
-Your progress is saved in `D:\DawnwalkerMap\src\assets\data\state.json`. Copy this file somewhere safe from time to time.
-
----
-
-## Problems
-
-| What you see | What to do |
-|---|---|
-| Alt+CapsLock does nothing | Load a save first and wait 10 seconds. The map is not active in the main menu. |
-| Map shows over the game but the game is black | Set Window Mode to **Borderless** (part C). |
-| `'node' is not recognized` | Install Node.js (part A) and restart the PC. |
-| Map opens, but no position | The mod is not in `ue4ss\Mods` or `config.ini` is wrong. Check manual step 1 and 2. |
-| Grey map without pictures | The download did not finish. Run install.bat again, or manual step 3 again. |
-
-## Uninstall
-
-1. Delete `...\ue4ss\Mods\DawnwalkerMapPos` in the game folder.
-2. Delete `D:\DawnwalkerMap`.
+3. In `D:\DawnwalkerMap`, type `cmd` in the address bar, press Enter, then run: `node src\services\fetch.js`
+4. Every time you play, in the same way run: `node src\main.js`
+   (or `powershell -ExecutionPolicy Bypass -File src\overlay.ps1` for Alt+CapsLock over the game)
