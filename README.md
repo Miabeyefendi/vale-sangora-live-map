@@ -1,3 +1,5 @@
+![Vale Sangora Live Map for The Blood of Dawnwalker](https://raw.githubusercontent.com/Miabeyefendi/vale-sangora-live-map/main/docs/banner.jpg)
+
 # Vale Sangora Live Map
 
 A map for **The Blood of Dawnwalker**.
