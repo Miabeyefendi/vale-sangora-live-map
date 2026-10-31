@@ -20,16 +20,19 @@
   "published": {
     "date": "2026-09-02 21:00:00.000000",
     "timezone_type": 3,
-    "timezone": "Europe/Berlin"
+    "timezone": "UTC"
   },
   "bgcolor": "#1c1414",
   "mbcolor": "#000000",
   "description": "The Blood of Dawnwalker Interactive Map of Vale Sangora: Discover all Points of Interest, the best Loot and Equipment, and how to complete every Quest",
+  "open_3d": "0",
+  "field_filters": "0",
   "guide_title": "The Blood of Dawnwalker",
   "layers": [
     {
       "layer_id": 804,
       "weight": 0,
+      "is_default": false,
       "title": "Vale Sangora"
     }
   ],
@@ -40,22 +43,23 @@
   "suffix": " Interactive Map - {guideTitle} | Gamer Guides®",
   "tag_id": null,
   "updated": {
-    "date": "2026-09-09 09:24:08.000000",
+    "date": "2026-10-30 10:53:37.000000",
     "timezone_type": 3,
-    "timezone": "Europe/Berlin"
+    "timezone": "UTC"
   },
   "metadata_entity_id": 496,
   "metadata_title": "Vale Sangora",
   "metadata_desc": "The Blood of Dawnwalker Interactive Map of Vale Sangora: Discover all Points of Interest, the best Loot and Equipment, and how to complete every Quest",
-  "metadata_img_filename": "thumb-496-243c90c1.png",
+  "metadata_img_filename": "thumb-496-9f5dc0ae.png",
   "metadata_img_w": 1920,
   "metadata_img_h": 1080,
   "metadata_entity_type": 6,
+  "default_layer_id": 804,
   "entity_type": 6,
   "newTitle": "Vale Sangora Interactive Map - The Blood of Dawnwalker | Gamer Guides®",
   "marker_counts": {
     "db-117518": 99,
-    "db-117554": 545,
+    "db-117554": 540,
     "db-117521": 92,
     "db-117524": 13,
     "db-117559": 76,
@@ -69,7 +73,7 @@
     "db-117556": 40,
     "db-117539": 6,
     "": 19,
-    "db-117560": 154,
+    "db-117560": 156,
     "db-117546": 33,
     "db-117540": 13,
     "db-117482": 20,
@@ -128,13 +132,14 @@
       "pin_color": "#744949",
       "collectible": 1,
       "user_submittable": true,
-      "count": 298,
+      "count": 301,
       "cat_marker_count": 0,
       "tags": null,
       "entity_item_id": null,
       "is_item_cat": true,
       "is_container": true,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117520/dawnwalker_landmarks-f4b03ddb.png.png",
       "children": [
         {
@@ -149,20 +154,21 @@
           "pin_color": null,
           "collectible": 1,
           "user_submittable": true,
-          "count": 12,
+          "count": 13,
           "cat_marker_count": 0,
           "tags": null,
           "entity_item_id": null,
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117524/dawnwalker_building-87649393.png.png",
           "items": [
             {
               "title": "Building(s)",
               "item_id": 687775,
               "image": null,
-              "count": 12,
+              "count": 13,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687775/dawnwalker_building_87649393 _1_-87649393.png.png",
@@ -192,6 +198,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117522/dawnwalker_destroyed_shrine-6121bf56.png.png",
           "items": [
             {
@@ -475,6 +482,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117526/dawnwalker_gate-133929f4.png.png",
           "items": [
             {
@@ -511,6 +519,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117523/dawnwalker_settlements-90bb03c8.png.png",
           "items": [
             {
@@ -547,6 +556,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117521/dawnwalker_shrine-9923d98f.png.png",
           "items": [
             {
@@ -583,6 +593,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117525/dawnwalker_tower_night-e9d77f7d.png.png",
           "items": [
             {
@@ -612,13 +623,14 @@
           "pin_color": null,
           "collectible": 1,
           "user_submittable": true,
-          "count": 154,
+          "count": 156,
           "cat_marker_count": 0,
           "tags": null,
           "entity_item_id": null,
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117560/dawnwalker_points_of_interest-b33df02a.png.png",
           "items": [
             {
@@ -638,7 +650,7 @@
               "title": "Campsite",
               "item_id": 689299,
               "image": null,
-              "count": 35,
+              "count": 37,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/689299/dawnwalker_points_of_interest_b33df02a-b33df02a-b33df02a.png.png",
@@ -722,6 +734,7 @@
       "is_item_cat": true,
       "is_container": true,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117537/dawnwalker_activities-d1c8931d.png.png",
       "children": [
         {
@@ -743,6 +756,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117540/dawnwalker_ancient_circle_day-0a0ec6ff.png.png",
           "items": [
             {
@@ -909,6 +923,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117547/dawnwalker_bandit_camp-738d0904.png.png",
           "items": [
             {
@@ -945,6 +960,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117542/dawnwalker_brencis_banner-05fbbd6c.png.png",
           "items": [
             {
@@ -1033,6 +1049,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117543/dawnwalker_curious_house-af666b23.png.png",
           "items": [
             {
@@ -1069,6 +1086,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117541/dawnwalker_haunted_site-ae0166b5.png.png",
           "items": [
             {
@@ -1144,6 +1162,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117545/dawnwalker_headhunters-8c72dd67.png.png",
           "items": []
         },
@@ -1166,6 +1185,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117546/dawnwalker_monsters_lair_night-21870719.png.png",
           "items": [
             {
@@ -1202,6 +1222,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117549/dawnwalker_person_in_charge-7542eec6.png.png",
           "items": [
             {
@@ -1238,6 +1259,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117548/dawnwalker_soldier_camp-de1986e0.png.png",
           "items": [
             {
@@ -1274,6 +1296,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117544/dawnwalker_soldier_picket-06832cb4.png.png",
           "items": [
             {
@@ -1310,6 +1333,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117539/dawnwalker_will_o_the_wisps-4e892320.png.png",
           "items": [
             {
@@ -1413,6 +1437,7 @@
       "is_item_cat": true,
       "is_container": true,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117527/dawnwalker_vendor-6c26431e.png.png",
       "children": [
         {
@@ -1434,6 +1459,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117530/dawnwalker_armourer-183fe378.png.png",
           "items": [
             {
@@ -1470,6 +1496,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117529/dawnwalker_blacksmith-42bd3265.png.png",
           "items": [
             {
@@ -1506,6 +1533,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117536/12-b2bd1855.png.png",
           "items": []
         },
@@ -1528,6 +1556,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117528/dawnwalker_general_store-78748d23.png.png",
           "items": [
             {
@@ -1564,6 +1593,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117532/dawnwalker_medic-12ee3c19.png.png",
           "items": [
             {
@@ -1600,6 +1630,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117534/dawnwalker_silver_trader-69c5194c.png.png",
           "items": [
             {
@@ -1636,6 +1667,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117535/dawnwalker_swordmastery_teacher-991f2d6c.png.png",
           "items": [
             {
@@ -1672,6 +1704,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117531/dawnwalker_tavern-811c3d4a.png.png",
           "items": [
             {
@@ -1708,6 +1741,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": true,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117533/dawnwalker_witchcraft_vendor-71b1abf7.png.png",
           "items": [
             {
@@ -1746,6 +1780,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117516/dawnwalker_journal-0b9035ac.png.png",
       "children": [
         {
@@ -1767,6 +1802,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117517/dawnwalker_main_objective-b722cb6f.png.png",
           "items": []
         },
@@ -1789,6 +1825,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117518/dawnwalker_quests-005060bc.png.png",
           "items": [
             {
@@ -2247,19 +2284,6 @@
               }
             },
             {
-              "title": "The Night of Horrors",
-              "item_id": 687744,
-              "image": null,
-              "count": 1,
-              "unpublished": false,
-              "customIcon": {
-                "path": "/images/map-marker-icon/15/687744/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
-                "w": 128,
-                "h": 128,
-                "color": null
-              }
-            },
-            {
               "title": "Finders Keepers",
               "item_id": 687571,
               "image": null,
@@ -2267,6 +2291,19 @@
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687571/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
+                "w": 128,
+                "h": 128,
+                "color": null
+              }
+            },
+            {
+              "title": "The Night of Horrors",
+              "item_id": 687744,
+              "image": null,
+              "count": 1,
+              "unpublished": false,
+              "customIcon": {
+                "path": "/images/map-marker-icon/15/687744/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
                 "w": 128,
                 "h": 128,
                 "color": null
@@ -2312,19 +2349,6 @@
               }
             },
             {
-              "title": "Where Old Devils Lie",
-              "item_id": 687748,
-              "image": null,
-              "count": 1,
-              "unpublished": false,
-              "customIcon": {
-                "path": "/images/map-marker-icon/15/687748/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
-                "w": 128,
-                "h": 128,
-                "color": null
-              }
-            },
-            {
               "title": "Into the Den",
               "item_id": 687575,
               "image": null,
@@ -2332,6 +2356,19 @@
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687575/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
+                "w": 128,
+                "h": 128,
+                "color": null
+              }
+            },
+            {
+              "title": "Where Old Devils Lie",
+              "item_id": 687748,
+              "image": null,
+              "count": 1,
+              "unpublished": false,
+              "customIcon": {
+                "path": "/images/map-marker-icon/15/687748/dawnwalker_quests_005060bc-005060bc-005060bc.png.png",
                 "w": 128,
                 "h": 128,
                 "color": null
@@ -3073,6 +3110,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117550/dawnwalker_court-5d6c083f.png.png",
           "items": [
             {
@@ -3616,6 +3654,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117519/dawnwalker_activities-d1c8931d.png.png",
           "items": []
         },
@@ -3638,6 +3677,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117559/dawnwalker_quest_objective-ccc153e7.png.png",
           "items": [
             {
@@ -4950,6 +4990,7 @@
       "is_item_cat": true,
       "is_container": true,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117555/dawnwalker_monsters-003803fc.png.png",
       "children": [
         {
@@ -4971,6 +5012,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117556/dawnwalker_monsters-003803fc.png.png",
           "items": [
             {
@@ -5020,6 +5062,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117558/dawnwalker_monsters-003803fc.png.png",
           "items": [
             {
@@ -5056,6 +5099,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117557/dawnwalker_monsters-003803fc.png.png",
           "items": [
             {
@@ -5217,13 +5261,14 @@
       "pin_color": "#7c7231",
       "collectible": 1,
       "user_submittable": true,
-      "count": 530,
+      "count": 539,
       "cat_marker_count": 0,
       "tags": null,
       "entity_item_id": null,
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117551/dawnwalker_chestt-bef0aea6.png.png",
       "children": [
         {
@@ -5238,13 +5283,14 @@
           "pin_color": null,
           "collectible": 1,
           "user_submittable": true,
-          "count": 530,
+          "count": 539,
           "cat_marker_count": 0,
           "tags": null,
           "entity_item_id": null,
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117554/dawnwalker_chestt-bef0aea6.png.png",
           "items": [
             {
@@ -5264,7 +5310,7 @@
               "title": "Chest",
               "item_id": 687935,
               "image": null,
-              "count": 150,
+              "count": 156,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687935/dawnwalker_chestt_bef0aea6_bef0aea6-bef0aea6.png.png",
@@ -5277,7 +5323,7 @@
               "title": "Corpse",
               "item_id": 687936,
               "image": null,
-              "count": 112,
+              "count": 114,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687936/dawnwalker_chestt_bef0aea6-bef0aea6-bef0aea6.png.png",
@@ -5303,7 +5349,7 @@
               "title": "Rockpile",
               "item_id": 689285,
               "image": null,
-              "count": 39,
+              "count": 40,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/689285/dawnwalker_chestt_bef0aea6-bef0aea6-bef0aea6.png.png",
@@ -5387,8 +5433,32 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117463/dawnwalker_weaponry-1bf499a7.png.png",
       "children": [
+        {
+          "id": 117903,
+          "marker_cat_id": "db-117903",
+          "parent": "db-117463",
+          "weight": 0,
+          "title": "Weaponry",
+          "icon_filename": null,
+          "icon_w": null,
+          "icon_h": null,
+          "pin_color": null,
+          "collectible": 1,
+          "user_submittable": true,
+          "count": 0,
+          "cat_marker_count": 0,
+          "tags": null,
+          "entity_item_id": null,
+          "is_item_cat": true,
+          "is_container": false,
+          "disable_dropdown": false,
+          "is_hidden_level": true,
+          "icon": null,
+          "items": []
+        },
         {
           "id": 117491,
           "marker_cat_id": "db-117491",
@@ -5408,6 +5478,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117491/t_itm_weapon_sworddawnwalker5a-d4ff4b0b.png.png",
           "items": [
             {
@@ -5509,6 +5580,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117490/t_itm_weapon_swordlongcommon1-40a47371.png.png",
           "items": [
             {
@@ -5584,6 +5656,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117488/t_itm_weapon_q106_maratsword-bda12d56.png.png",
           "items": [
             {
@@ -5698,6 +5771,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117489/t_weapon_axe_01-0a08f32c.png.png",
           "items": []
         }
@@ -5722,6 +5796,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117464/dawnwalker_armour-311e3100.png.png",
       "children": [
         {
@@ -5743,6 +5818,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117470/t_clothing_hma_coen_feet_k-43331fd6.png.png",
           "items": [
             {
@@ -5818,6 +5894,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117471/t_clothing_hma_coen_wristguard_o-c3e5c79d.png.png",
           "items": [
             {
@@ -5958,6 +6035,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117472/t_clothing_hma_soldiera_torso_g-814c411b.png.png",
           "items": [
             {
@@ -6111,6 +6189,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117473/t_itm_clothing_legscommon2-45f6abbc.png.png",
           "items": [
             {
@@ -6188,6 +6267,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117465/dawnwalker_items-c7a785c1.png.png",
       "children": [
         {
@@ -6209,6 +6289,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117468/t_itm_jewelery_ancientherosamulet_itemname-b74dcdc4.png.png",
           "items": [
             {
@@ -6362,6 +6443,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117469/t_itm_jewelery_alchemistsring-bb8d1f89.png.png",
           "items": [
             {
@@ -6530,6 +6612,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117462/dawnwalker_rings-9f14a068.png.png",
       "children": [
         {
@@ -6551,6 +6634,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117481/t_itm_jewelery_miller_s_ring-45e7bdb0.png.png",
           "items": [
             {
@@ -6886,6 +6970,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117476/t_itm_consumable_bread-7e9b7120.png.png",
           "items": [
             {
@@ -6974,6 +7059,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117477/t_ui_inventory_coin-ce23198d.png.png",
           "items": []
         },
@@ -6996,6 +7082,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117478/t_itm_ingredient_copper_sulfate-ede8da0b.png.png",
           "items": [
             {
@@ -7032,6 +7119,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117479/t_itm_junk_animalhide-3a375f9d.png.png",
           "items": []
         },
@@ -7054,6 +7142,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117482/t_itm_key_8-d0264e62.png.png",
           "items": [
             {
@@ -7324,6 +7413,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117483/t_icon_category_quest_st_tyna_shrine_part-00fa5801.png.png",
           "items": [
             {
@@ -7711,6 +7801,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117480/t_itm_junk_shinytooth-79a13121.png.png",
           "items": [
             {
@@ -7760,6 +7851,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117485/t_itm_quest_volk_s_shovel-673f10b5.png.png",
           "items": [
             {
@@ -7796,6 +7888,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117484/t_itm_silver_lumpofsilver-04ceea8b.png.png",
           "items": []
         }
@@ -7820,6 +7913,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117467/dawnwalker_manual-9d1b5895.png.png",
       "children": [
         {
@@ -7841,6 +7935,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117486/t_itm_spellbook_mercurial_fervour-0e101b6e.png.png",
           "items": [
             {
@@ -8111,6 +8206,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117487/t_itm_readable_recipe-67e2e3a7.png.png",
           "items": [
             {
@@ -8220,13 +8316,14 @@
       "pin_color": "#4d3960",
       "collectible": 1,
       "user_submittable": true,
-      "count": 69,
+      "count": 70,
       "cat_marker_count": 0,
       "tags": null,
       "entity_item_id": null,
       "is_item_cat": true,
       "is_container": true,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117466/dawnwalker_books-836d13c2.png.png",
       "children": [
         {
@@ -8248,6 +8345,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117475/t_itm_readable_map-e9086eaa.png.png",
           "items": [
             {
@@ -8381,20 +8479,21 @@
           "pin_color": null,
           "collectible": 1,
           "user_submittable": true,
-          "count": 60,
+          "count": 61,
           "cat_marker_count": 0,
           "tags": null,
           "entity_item_id": null,
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117474/t_itm_readable_scroll-771bdd37.png.png",
           "items": [
             {
               "title": "Last Request",
               "item_id": 687154,
               "image": null,
-              "count": 1,
+              "count": 2,
               "unpublished": false,
               "customIcon": {
                 "path": "/images/map-marker-icon/15/687154/t_itm_readable_lbr1-b32f205b.png.png",
@@ -9154,6 +9253,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117567/27-3594a751.png.png",
       "children": [
         {
@@ -9175,6 +9275,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117569/t_icon_perk_secondskini-205efb3e.png.png",
           "items": []
         },
@@ -9197,6 +9298,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117570/t_icon_perk_dimensionreach-63edca3a.png.png",
           "items": [
             {
@@ -9259,6 +9361,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117568/t_icon_perk_forbiddensigils-ba384607.png.png",
           "items": [
             {
@@ -9297,6 +9400,7 @@
       "is_item_cat": true,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/db-cat-icon/16/117561/28-2e475ef1.png.png",
       "children": [
         {
@@ -9318,6 +9422,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117562/22-4d7ecfcc.png.png",
           "items": []
         },
@@ -9340,6 +9445,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117563/25-86ed4a68.png.png",
           "items": []
         },
@@ -9362,6 +9468,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117565/24-f2ae0280.png.png",
           "items": []
         },
@@ -9384,6 +9491,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117564/23-564df9f3.png.png",
           "items": []
         },
@@ -9406,6 +9514,7 @@
           "is_item_cat": true,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/db-cat-icon/16/117566/26-4f592008.png.png",
           "items": []
         }
@@ -9430,6 +9539,7 @@
       "is_item_cat": false,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/map-cat-icon/2425.png.png",
       "children": [
         {
@@ -9451,6 +9561,7 @@
           "is_item_cat": false,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/map-cat-icon/0593_lock.png.png"
         },
         {
@@ -9472,6 +9583,7 @@
           "is_item_cat": false,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/map-cat-icon/dawnwalker_night.png.png"
         }
       ]
@@ -9495,6 +9607,7 @@
       "is_item_cat": false,
       "is_container": false,
       "disable_dropdown": false,
+      "is_hidden_level": false,
       "icon": "/images/map-cat-icon/1816.png.png",
       "children": [
         {
@@ -9516,6 +9629,7 @@
           "is_item_cat": false,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/map-cat-icon/dawnwalker_compel_soul.png.png"
         },
         {
@@ -9537,6 +9651,7 @@
           "is_item_cat": false,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/map-cat-icon/1815.png.png"
         },
         {
@@ -9558,10 +9673,12 @@
           "is_item_cat": false,
           "is_container": false,
           "disable_dropdown": false,
+          "is_hidden_level": false,
           "icon": "/images/map-cat-icon/note4.png.png"
         }
       ]
     }
   ],
-  "generated": "2026-09-12T20:56:59+02:00"
+  "structure_count": 0,
+  "generated": "2026-10-31T03:32:17+00:00"
 }
