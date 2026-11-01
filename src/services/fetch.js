@@ -78,6 +78,17 @@ async function main() {
   // 2. Markers, labels, lines, routes.
   console.log('GeoJSON');
   const gjPath = `/map/${MAP_ID}/geojson`;
+  // The marker list changes when the site is updated, so it is fetched again on every run.
+  // If that fails (offline), the copy already on disk is kept.
+  try {
+    const res = await fetch(ORIGIN + gjPath, { headers: HEADERS });
+    if (res.ok) {
+      const buf = Buffer.from(await res.arrayBuffer());
+      JSON.parse(buf.toString('utf8'));
+      fs.mkdirSync(path.dirname(localPath(gjPath)), { recursive: true });
+      fs.writeFileSync(localPath(gjPath), buf);
+    }
+  } catch { /* keep the old copy */ }
   await download(gjPath);
   const gj = JSON.parse(fs.readFileSync(localPath(gjPath), 'utf8'));
   const markers = gj.markers.features;

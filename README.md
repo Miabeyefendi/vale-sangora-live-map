@@ -165,7 +165,21 @@ Start the game and load a save. Your position appears only while you play.
 
 ---
 
-## Part 12. Remove the map
+## Part 12. Update to a new version
+
+When a new version is on the Releases page, update like this:
+
+1. Download the new zip from the **Releases** page.
+2. Open the zip. Select everything inside. Copy it.
+3. Paste it into your map folder `D:\DawnwalkerMap`. When Windows asks, click **Replace the files in the destination**.
+4. Double-click **install.bat** again. It gets the newest marker list and downloads only the new pictures. This is quick.
+
+Your progress is safe. It is in `src\assets\data\state.json`, and that file is not in the zip.
+Do not delete the folder `src\assets\data\site`. It holds the map pictures.
+
+---
+
+## Part 13. Remove the map
 
 1. In your game folder, open `Dawnwalker\Binaries\Win64\ue4ss\Mods`.
 2. Delete the folder `DawnwalkerMapPos`.
